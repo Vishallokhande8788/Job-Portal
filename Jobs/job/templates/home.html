@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,14 +11,18 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
   </head>
   <body>
     <h1>Welcome to Job-Portal</h1>
     <button type="button" class="btn btn-success">
-      <a href="/mum" style="color: white; text-decoration: none;">Mumbai Jobs</a></button>
+      <a href="/mumbai" style="color: white; text-decoration: none;">Mumbai Jobs</a></button>
 
-    <button type="button" class="btn btn-danger">Pune Jobs</button>
-    <button type="button" class="btn btn-primary">Banglore Jobs</button>
-    <button type="button" class="btn btn-warning">delhi Jobs</button>
+    <button type="button" class="btn btn-danger">
+        <a href="/pune" style="color: white; text-decoration: none;">Pune Jobs</a></button>
+
+    <button type="button" class="btn btn-primary" <a href="/banglore" style="color: white; text-decoration: none;">Banglore Jobs</a></button>
+
+    <button type="button" class="btn btn-dark"<a href="/delhi" style="color: white; text-decoration: none;">Delhi Jobs</a></button>
   </body>
 </html>

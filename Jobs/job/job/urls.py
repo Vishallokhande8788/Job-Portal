@@ -22,6 +22,9 @@ from jobapp import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.home ),
-    path("mum/", views.mumbaiJobsList),
-    
+    path("mumbai/", views.mumbaiJobsList),
+    path("pune/", views.puneJobsList),
+    path("banglore/", views.bangloreJobsList),
+    path("delhi/", views.delhiJobsList),
+
 ]

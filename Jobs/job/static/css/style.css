@@ -1,0 +1,16 @@
+/* Background Image */
+body {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/001/829/377/non_2x/agents-who-find-jobs-for-job-seekers-and-companies-that-need-professional-workers-for-career-interview-flat-illustration-concept-for-landing-page-web-ui-banner-flyer-poster-template-background-free-vector.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 50px;
+  text-shadow: 1px 1px 2px black;
+}
+
+
+
+
