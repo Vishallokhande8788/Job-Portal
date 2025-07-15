@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,10 +11,34 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
-  <body>
-    <h1>Mumbai Jobs</h1>
-    <table class="table table-bordered ">
+  <body
+    class="mumbaiJobs"
+    style="
+      background: linear-gradient(135deg, #667eea 0%, #46e231 40%, #eb4218 96%);
+      background-attachment: fixed;
+      margin: 0;
+      min-height: 100vh;
+    "
+  >
+    <h1
+      style="
+        font-size: 2.5rem;
+        text-align: center;
+        color: rgb(7, 7, 7);
+        margin-bottom: 30px;
+        margin-top: 30px;
+        text-shadow: 1px 1px 1px rgb(234, 74, 74);
+      "
+    >
+      Mumbai Jobs
+    </h1>
+    <table
+      class="table table-bordered"
+      style="min-height: 100vh"
+"
+    >
       <tr>
         <th>Company Name</th>
         <th>Job Title</th>
@@ -37,7 +62,15 @@
         <td>{{ job.address }}</td>
         <td>{{ job.contactNumber }}</td>
         <td>{{ job.email }}</td>
-        <td><button type="button" class="btn btn-danger">Apply Now</button></td>
+        <td>
+          <a
+            href="/applybtn"
+            class="btn btn-danger"
+            style="text-decoration: none; color: white; font-weight: bold"
+          >
+            Apply Now
+          </a>
+        </td>
       </tr>
       {% endfor %}
     </table>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f5f7fa; color: #333;">
+
+    <!-- Application Form Page -->
+    <div id="applicationForm" style="max-width: 600px; margin: 50px auto; padding: 30px; background: white; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
+        <h1 style="color: #2c3e50; margin-top: 0; font-weight: 600;">Job Application</h1>
+        
+        <form id="applyForm" style="display: flex; flex-direction: column; gap: 20px;">
+            <div>
+                <label for="name" style="display: block; margin-bottom: 8px; font-weight: 500; color: #2c3e50;">Full Name</label>
+                <input type="text" id="name" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; box-sizing: border-box;" required>
+            </div>
+            
+            <div>
+                <label for="email" style="display: block; margin-bottom: 8px; font-weight: 500; color: #2c3e50;">Email</label>
+                <input type="email" id="email" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; box-sizing: border-box;" required>
+            </div>
+            
+            <div>
+                <label for="resume" style="display: block; margin-bottom: 8px; font-weight: 500; color: #2c3e50;">Upload Resume</label>
+                <input type="file" id="resume" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; box-sizing: border-box;" required>
+            </div>
+            
+            <button type="button" onclick="submitApplication()" style="background-color: #3498db; color: white; border: none; padding: 14px; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; transition: background-color 0.3s; margin-top: 10px;">
+                Apply Now
+            </button>
+        </form>
+    </div>
+
+    <!-- Thank You Page (initially hidden) -->
+    <div id="thankYouPage" style="display: none; max-width: 600px; margin: 50px auto; padding: 40px; background: white; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.1); text-align: center;">
+        <div style="background-color: #e8f4fc; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#3498db" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+        </div>
+        
+        <h2 style="color: #2c3e50; margin-top: 0; font-weight: 600;">Thank You for Applying!</h2>
+        <p style="color: #7f8c8d; line-height: 1.6; margin-bottom: 30px;">
+            We've received your application. Our team will review your information and get back to you within 3-5 business days.
+        </p>
+        
+        <div style="display: flex; justify-content: center; gap: 15px; margin-top: 30px;">
+            <a href="#" onclick="goBackToForm()" style="padding: 12px 24px; border: 1px solid #3498db; color: #3498db; text-decoration: none; border-radius: 8px; font-weight: 500; transition: all 0.3s;">
+                Back to Form
+            </a>
+            <a href="#" style="padding: 12px 24px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; font-weight: 500; transition: background-color 0.3s;">
+                Visit Our Website
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function submitApplication() {
+            // In a real application, you would submit the form data to a server here
+            // For this example, we'll just show the thank you page
+            
+            document.getElementById('applicationForm').style.display = 'none';
+            document.getElementById('thankYouPage').style.display = 'block';
+        }
+        
+        function goBackToForm() {
+            document.getElementById('thankYouPage').style.display = 'none';
+            document.getElementById('applicationForm').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,16 +1,62 @@
-/* Background Image */
-body {
-  background-image: url("https://static.vecteezy.com/system/resources/previews/001/829/377/non_2x/agents-who-find-jobs-for-job-seekers-and-companies-that-need-professional-workers-for-career-interview-flat-illustration-concept-for-landing-page-web-ui-banner-flyer-poster-template-background-free-vector.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 100vh;
-  text-align: center;
-  padding-top: 50px;
-  text-shadow: 1px 1px 2px black;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Home Page Background */
+.home {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/001/829/377/non_2x/agents-who-find-jobs-for-job-seekers-and-companies-that-need-professional-workers-for-career-interview-flat-illustration-concept-for-landing-page-web-ui-banner-flyer-poster-template-background-free-vector.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+}
 
+/* Job Page Background */
+.mumbaiJobs , .puneJobs, .bangloreJobs, .delhiJobs {
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8R3ZHup_Edzi8-T7TmezlW_dGIf8FW2sbPopiCgHaUzXp-oTbUE-FYui8Q0NhBVOKjRY&usqp=CAU"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 50px 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+}
 
+/* Button Styles */
+button {
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
 
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Text */
+h1, h2, h3, p {
+  max-width: 800px;
+  margin: 10px auto;
+}

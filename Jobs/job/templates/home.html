@@ -13,28 +13,25 @@
     />
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
-  <body>
-    <h1>Welcome to Job-Portal</h1>
-    <button type="button" class="btn btn-success">
-      <a href="/mumbai" style="color: white; text-decoration: none"
-        >Mumbai Jobs</a
-      >
+  <body class="home">
+   <h1 style="font-family: 'Segoe UI', sans-serif; font-weight: 600; letter-spacing: 1px; color: #0a0909; text-shadow: 0 2px 4px rgba(0,0,0,0.3); text-align: center; margin: 20px 0;">Welcome to Job-Portal</h1>
+
+<div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; ;">
+    <button type="button" style="background: linear-gradient(135deg, #28a745, #218838); border: none; border-radius: 50px; padding: 12px 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
+        <a href="/mumbai" style="color: white; text-decoration: none; font-family: 'Segoe UI', sans-serif; font-weight: 500; letter-spacing: 0.5px;">Mumbai Jobs</a>
     </button>
 
-    <button type="button" class="btn btn-danger">
-      <a href="/pune" style="color: white; text-decoration: none">Pune Jobs</a>
+    <button type="button" style="background: linear-gradient(135deg, #dc3545, #c82333); border: none; border-radius: 50px; padding: 12px 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
+        <a href="/pune" style="color: white; text-decoration: none; font-family: 'Segoe UI', sans-serif; font-weight: 500; letter-spacing: 0.5px;">Pune Jobs</a>
     </button>
 
-    <button type="button" class="btn btn-primary">
-      <a href="/banglore" style="color: white; text-decoration: none"
-        >Bangalore Jobs</a
-      >
+    <button type="button" style="background: linear-gradient(135deg, #007bff, #0069d9); border: none; border-radius: 50px; padding: 12px 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
+        <a href="/banglore" style="color: white; text-decoration: none; font-family: 'Segoe UI', sans-serif; font-weight: 500; letter-spacing: 0.5px;">Bangalore Jobs</a>
     </button>
 
-    <button type="button" class="btn btn-dark">
-      <a href="/delhi" style="color: white; text-decoration: none"
-        >Delhi Jobs</a
-      >
+    <button type="button" style="background: linear-gradient(135deg, #343a40, #23272b); border: none; border-radius: 50px; padding: 12px 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; cursor: pointer;">
+        <a href="/delhi" style="color: white; text-decoration: none; font-family: 'Segoe UI', sans-serif; font-weight: 500; letter-spacing: 0.5px;">Delhi Jobs</a>
     </button>
+</div>
   </body>
 </html>

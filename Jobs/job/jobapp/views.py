@@ -20,3 +20,6 @@ def bangloreJobsList(request):
 def delhiJobsList(request):
     delhiJobsView = delhiJobs.objects.all()
     return render(request, 'delhiJobs.html', {'delhiJobsView': delhiJobsView})
+
+def applybtn(request):
+    return render(request, 'applybtn.html')

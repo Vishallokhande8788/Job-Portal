@@ -26,5 +26,6 @@ urlpatterns = [
     path("pune/", views.puneJobsList),
     path("banglore/", views.bangloreJobsList),
     path("delhi/", views.delhiJobsList),
+    path("applybtn/", views.applybtn),
 
 ]
